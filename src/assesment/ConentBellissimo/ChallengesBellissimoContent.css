@@ -1,0 +1,93 @@
+.content-challenges {
+  min-height: 100vh;
+  padding: 90px 10%;
+  background: linear-gradient(180deg, #020617, #0f172a);
+  color: #ffffff;
+  font-family: "Inter", sans-serif;
+}
+
+.content-title {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.content-intro {
+  text-align: center;
+  font-size: 1rem;
+  max-width: 720px;
+  margin: 0 auto 80px;
+  opacity: 0.85;
+}
+
+/* BLOCK */
+.content-block {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  align-items: center;
+  margin-bottom: 80px;
+}
+
+.content-block.reverse {
+  direction: rtl;
+}
+
+.content-block.reverse .content-text {
+  direction: ltr;
+}
+
+/* TEXT */
+.content-text h3 {
+  font-size: 1.6rem;
+  color: #00e5ff;
+  margin-bottom: 16px;
+}
+
+.content-text p {
+  font-size: 1rem;
+  line-height: 1.7;
+  margin-bottom: 16px;
+  opacity: 0.9;
+}
+
+.content-text ul {
+  padding-left: 18px;
+}
+
+.content-text li {
+  margin-bottom: 10px;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+/* IMAGE */
+.content-image {
+  border-radius: 22px;
+  overflow: hidden;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+}
+
+.content-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.6s ease;
+}
+
+.content-image:hover img {
+  transform: scale(1.06);
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .content-block {
+    grid-template-columns: 1fr;
+  }
+
+  .content-block.reverse {
+    direction: ltr;
+  }
+}

@@ -1,0 +1,105 @@
+.projects {
+  min-height: 100vh;
+  padding: 80px 10%;
+  background: #020617;
+  color: #ffffff;
+  font-family: "Inter", sans-serif;
+}
+
+.projects-title {
+  text-align: center;
+  font-size: 2.4rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.projects-subtitle {
+  text-align: center;
+  font-size: 1rem;
+  opacity: 0.85;
+  margin-bottom: 60px;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 32px;
+}
+
+/* CARD */
+.project-card {
+  background: #111827;
+  border-radius: 22px;
+  overflow: hidden;
+  text-decoration: none;
+  color: #ffffff;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+  transition: all 0.35s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 25px 50px rgba(0, 229, 255, 0.25);
+}
+
+/* IMAGE */
+.project-image {
+  height: 180px; /* container height */
+  width: 100%;
+  overflow: hidden;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 22px 22px 0 0; /* card bilan birga rounded */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.project-image img {
+  max-height: 180px;
+  width: auto;
+  object-fit: contain;
+}
+
+.project-card:hover img {
+  transform: scale(1.08);
+}
+
+.project-card:hover img {
+  transform: scale(1.08);
+}
+
+/* CONTENT */
+.project-content {
+  padding: 24px;
+}
+
+.project-content h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.project-content p {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  opacity: 0.9;
+  margin-bottom: 18px;
+}
+
+.project-link {
+  font-size: 0.85rem;
+  color: #00e5ff;
+  font-weight: 500;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .projects {
+    padding: 60px 6%;
+  }
+
+  .projects-title {
+    font-size: 2rem;
+  }
+}
