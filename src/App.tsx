@@ -1,5 +1,4 @@
 import React from "react";
-import logo from "./logo.svg";
 import "./App.css";
 import Header from "./assesment/Header/Header";
 import Education from "./assesment/Education/Education";
